@@ -63,6 +63,7 @@
         <textarea name="text" id="text" maxlength="255" rows="5" cols="20" placeholder="Type some text...">
           </textarea>
         </div>
+          <button type="reset">RESET</button>
           <button type="submit">SEND</button>
         </fieldset>
   </form>
