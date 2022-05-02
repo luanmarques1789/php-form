@@ -7,35 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-
   <title>Document</title>
 </head>
 
 <body>
-  <form action="retrieve.php" method="post">
+  <form id="form" action="retrieve.php" method="post">
     <fieldset>
       <legend>FORM EXAMPLE</legend>
-      <div>
+      <div class="break">
         <label for="user_name">Name:</label>
-        <input type="text" name="user_name" id="user_name" maxlength=200 placeholder="Name">
+        <input type="text" class="field" name="user_name" id="user_name" maxlength=200 placeholder="Name">
       </div>
 
-      <div>
+      <div class="break">
         <label for="user_email">E-mail:</label>
-        <input type="email" name="user_email" id="user_email" placeholder="E-mail">
+        <input type="email" class="field" name="user_email" id="user_email" placeholder="E-mail">
       </div>
 
-      <div>
+      <div class="break">
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="password" class="field" name="password" id="password" placeholder="Password">
       </div>
 
-      <div>
+      <div class="break">
         <label for="cpassword">Confirm password:</label>
-        <input type="password" name="cpassword" id="cpassword" placeholder="Confirm password">
+        <input type="password" class="field" name="cpassword" id="cpassword" placeholder="Confirm password">
       </div>
 
-      <div>
+      <div class="break">
         <label for="sex">Sex:</label>
         <input type="radio" name="sex" id="sex" value="F">
         <label for="female">Female</label>
@@ -44,12 +43,12 @@
         <label for="male">Male</label>
       </div>
 
-      <div>
+      <div class="break">
         <label for="age">Age:</label>
-        <input type="number" name="age" id="age" min="0" max="120" >
+        <input type="number" name="age" id="age" min="0" max="120">
       </div>
 
-      <div>
+      <div class="break">
         <label for="city">Cities:</label>
         <select name="city" id="city">
           <option value="maringa">Maringá</option>
@@ -58,14 +57,14 @@
         </select>
       </div>
 
-      <div>
-        <label for="text">Text:</label><br/>
-        <textarea name="text" id="text" maxlength="255" rows="5" cols="20" placeholder="Type some text...">
+      <div class="break">
+        <label for="text">Text:</label><br />
+        <textarea name="text" id="text" maxlength="100" placeholder="Type some text...">
           </textarea>
-        </div>
-          <button type="reset">RESET</button>
-          <button type="submit">SEND</button>
-        </fieldset>
+      </div>
+      <button type="reset">RESET</button>
+      <button type="submit">SEND</button>
+    </fieldset>
   </form>
 </body>
 
