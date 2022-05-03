@@ -16,8 +16,4 @@ else {
   header("Location: not_registered.html");
 }
 
-echo "<pre>";
-print_r($user);
-echo "</pre>";
-
 ?>
